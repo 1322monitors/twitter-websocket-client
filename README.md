@@ -12,6 +12,9 @@ tweet-over-websocket source.
 Typical delivery is ~150-250ms from when the tweet posts. Docs for the event
 shape: https://1322.io/docs — platform page: https://1322.io/platforms/x
 
+Piping tracked tweets into a Discord channel: https://1322.io/blog/twitter-to-discord-bot
+How this compares to other services: https://1322.io/alternatives/tweetstream · https://1322.io/alternatives/twitterapi-io
+
 ## node
 
 ```bash
