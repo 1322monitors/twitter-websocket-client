@@ -1,16 +1,8 @@
 # twitter-websocket-client
 
-Minimal real-time Twitter/X client over WebSocket. Connects, subscribes to the
-accounts on your tracked list, prints new tweets as they land. Node and Python.
+Minimal real-time Twitter/X client over WebSocket, in Node and Python: connect, subscribe to the accounts on your tracked list, and print new tweets as they land, typically 150-250ms after they post. It is a Twitter streaming API alternative for people who need a real-time Twitter API for specific accounts without an X developer account or read caps; it talks to the 1322 managed feed, but the consumer pattern is generic. Maintained by the 1322 team.
 
-I wrote this for my own alert bots after the official streaming API got pulled
-and polling turned out to be too slow. It talks to the [1322](https://1322.io)
-detection feed (a managed real-time WebSocket API — no Twitter dev account, no
-read caps), but the consumer pattern is generic; swap the URL for any
-tweet-over-websocket source.
-
-Typical delivery is ~150-250ms from when the tweet posts. Docs for the event
-shape: https://1322.io/docs — platform page: https://1322.io/platforms/x
+Docs for the event shape: https://1322.io/docs — platform page: https://1322.io/platforms/x
 
 Piping tracked tweets into a Discord channel: https://1322.io/blog/twitter-to-discord-bot
 How this compares to other services: https://1322.io/alternatives/tweetstream · https://1322.io/alternatives/twitterapi-io
@@ -49,5 +41,12 @@ Get a key + your ws path from the dashboard api-access page after signup.
 Events arrive in stages (mini -> update -> expanded -> full) so you get the
 earliest signal first, then the enriched version. Dedupe on the tweet id if you
 only want one hit per tweet.
+
+## Related
+
+- [1322-client](https://github.com/SisoSol/1322-client) - installable, typed version of this script (npm)
+- [kol-tweet-alert-bot](https://github.com/SisoSol/kol-tweet-alert-bot) - contract-address detection + Telegram alerts
+- [prediction-market-router](https://github.com/SisoSol/prediction-market-router) - keyword match + webhook router
+- [social-monitor-examples](https://github.com/SisoSol/social-monitor-examples) - minimal consumers for all seven platforms
 
 PRs welcome.
