@@ -44,9 +44,9 @@ only want one hit per tweet.
 
 ## Related
 
-- [1322-client](https://github.com/SisoSol/1322-client) - installable, typed version of this script (npm)
-- [kol-tweet-alert-bot](https://github.com/SisoSol/kol-tweet-alert-bot) - contract-address detection + Telegram alerts
-- [prediction-market-router](https://github.com/SisoSol/prediction-market-router) - keyword match + webhook router
-- [social-monitor-examples](https://github.com/SisoSol/social-monitor-examples) - minimal consumers for all seven platforms
+- [1322-client](https://github.com/1322monitors/1322-client) - installable, typed version of this script (npm)
+- [kol-tweet-alert-bot](https://github.com/1322monitors/kol-tweet-alert-bot) - contract-address detection + Telegram alerts
+- [prediction-market-router](https://github.com/1322monitors/prediction-market-router) - keyword match + webhook router
+- [social-monitor-examples](https://github.com/1322monitors/social-monitor-examples) - minimal consumers for all seven platforms
 
 PRs welcome.
